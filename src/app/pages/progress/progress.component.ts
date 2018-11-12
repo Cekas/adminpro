@@ -1,3 +1,4 @@
+// Componente para manpular los progresBar de bootstrap
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
+  progreso1: number  = 20;
+  progreso2: number  = 50;
+
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {    
   }
 
 }
