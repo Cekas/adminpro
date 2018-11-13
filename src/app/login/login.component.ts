@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+// Funcion para llamar al archivo src\assets\js\custom.js y ejecutar el plugin, en el index se declara el archivo.
+declare function init_plugins();
 
 @Component({
   selector: 'app-login',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router
+    ) { }
 
   ngOnInit() {
+    init_plugins();
   }
 
+  ingresar() {
+    console.log('ingresando');
+
+    this.router.navigate(['/dashboard']);
+    
+  }
 }

@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* En la pagina de temas se cambiara el curso cuando se pase por alguno de los elementos de seleccion */
+#themecolors a {
+    cursor: pointer;
+}

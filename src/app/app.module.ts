@@ -16,6 +16,9 @@ import { RegisterComponent } from './login/register.component';
 // Mudulo para majenar los eventos de un formulario
 import { FormsModule } from "@angular/forms";
 
+// Servicios, Modulo donde se importan todos los servicios.
+import { ServiceModule } from './services/service.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +30,8 @@ import { FormsModule } from "@angular/forms";
     AppRoutingModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
