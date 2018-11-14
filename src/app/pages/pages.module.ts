@@ -27,6 +27,8 @@ import { FormsModule } from "@angular/forms";
 
 // ng2-charts Pugin para las graficas
 import { ChartsModule } from 'ng2-charts';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { ChartsModule } from 'ng2-charts';
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         PagesComponent,
